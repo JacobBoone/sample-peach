@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PeachMe</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+
+<body ng-app="peachApp" class="ng-scope"><!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><!-- Add your site or application content here --><!-- ngView:  -->
+    <div class="content animated ng-scope" ng-view="">
+    	<div class="container ng-scope">
+    	<!-- Header -->
+	    	<div class="header clearfix">
+	    		<div class="col-sm-6 col-xs-3">
+	    			<div class="logo">
+	    				<a href="#"><img src="images/94382040.Logo.png" alt="Peach"></a>
+	    			</div>
+
+	    			<h3 class="text-primary hidden-xs"><a href="#">peach</a></h3>
+	    		</div>
+	    			<div class="col-sm-6 col-xs-9">
+	    				<button btn-animate="" class="btn btn-info btn-sign-in pull-right" data-toggle="modal" data-target="#modalLogin"><strong>SIGN IN</strong>
+	    				</button>
+	    				<ul class="more pull-right hide">
+	    					<li class="bg-primary border-radius pull-right"></li>
+	    					<li class="bg-primary border-radius pull-right"></li>
+	    					<li class="bg-primary border-radius pull-right"></li>
+	    				</ul>
+	    			</div>
+	    	</div><!-- Header -->
+    	</div>
+
+    	<div class="hero-cover-block clearfix ng-scope">
+    		<div class="hero-cover-bg">
+    		</div>
+    		<div class="container">
+    			<div class="col-sm-12 content-hero">
+    				<div class="center-block clearfix">
+    					<h1>Protect what you love</h1>
+    					<h3>Warranty pricing and comparison on your terms</h3>
+    					<a href="" btn-animate="" class="btn btn-info fw-medium" data-toggle="modal" data-target="#modalLogin">LET'S START</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="how-we-doit-block block fw-light ng-scope">
+    		<div class="container">
+    			<div class="col-sm-12 text-center">
+    				<h3 class="fw-light text-info">How We Do It</h3>
+    				<div class="step-1 steps col-sm-5">
+	    				<div class="image center-block">
+	    					<img src="images/fe6b9111.Server.png">
+	    				</div>
+	    				<p class="text-justify">We've built the most advanced warranty analytics platform comparing and summarizing hundreds of policies in seconds.</p>
+    				</div>
+    				<div class="step-2 steps col-sm-5 col-md-offset-1 col-sm-offset-1">
+    					<div class="image center-block">
+    						<img src="images/8ac91206.Options.png">
+    					</div>
+    					<p class="text-justify">We put them in “Plain English” so you can make "Peaches to Peaches" comparisons when buying Warranties.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="about-block block ng-scope">
+    		<div class="container">
+    			<div class="center-block col-sm-5 text-center">
+    				<div class="image">
+    					<img src="images/4afaf004.Founders.png">
+    				</div>
+    				<h3 class="text-info fw-light">About The Team</h3>
+    				<p class="text-primary text-justify">We go to work to do two things: share passionate ideas about technology and make the world a little better. Co-founders, Luke and Mauricio are proud of the struggles they’ve overcome in life to become entrepreneurs. We exist that the powerful revolution goes on and that we may contribute a verse.
+    				</p>
+    				</div>
+    		</div>
+    	</div>
+
+    	<div class="peach-block block ng-scope">
+    		<div class="container">
+    			<div class="center-block col-sm-6 text-center border-bottom">
+    				<div class="col-sm-10 center-block">
+    					<div class="logo">
+    					<img src="images/94382040.Logo.png">
+    					</div>
+    					<h2 class="fw-normal text-primary">peach</h2>
+    					<p class="text-justify">Peach is a startup disrupting the insurance market. Designed to give you transparency around your warranties choices so you can exactly get what you need at the right price.
+    					</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<div class="press-block block ng-scope">
+    		<div class="container">
+    			<div class="col-sm-12 text-center">
+    				<p>Supported by</p>
+    				<ul class="logos">
+    					<li>
+    						<a href="http://www.techstars.com" target="_blank">
+    						<img src="images/ac38f1ff.Techstars.png" alt="Techstars">
+    						</a>
+    					</li>
+    					<li>
+    						<a href="http://www.boomtownboulder.com" target="_blank"><img src="images/6290e9ef.Boomtown.png" alt="Boomtown">
+    						</a>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+
+    	<!-- Modal -->
+    	<div class="modal fade ng-scope" id="modalLogin" tabindex="-1" role="dialog">
+    		<div class="modal-dialog animated bounceOutDown" ng-class="{'animated bounceInDown':modalEffect, 'animated bounceOutDown' : !modalEffect}">
+    			<div class="modal-content">
+    				<div class="modal-body border-radius clearfix">
+    				<!-- HEADER - MODAL  -->
+    					<div class="modal-header">
+    						<div class="logo">
+    							<img src="images/9b2a0793.Mini.png">
+    						</div>
+    					</div>
+    					<!-- FORM SUBMIT -->
+    					<div class="modal-form-block" ng-hide="formSuccess">
+	    					<div class="text-center">
+	    						<h3><strong>Launching Soon</strong></h3>
+	    						<p class="text-primary">Notify me when it’s ready.</p>
+	    					</div>
+
+	    					<div class="center-block col-sm-8 form-group">
+	    						<form class="form-horizontal form-subscribe ng-pristine ng-invalid ng-invalid-required" role="form" ng-submit="formSubmit()">
+		    						<div class="form-group has-feedback">
+		    							<div class="col-sm-12">
+		    								<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+		    								<input type="email" name="email" ng-model="email" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-email" placeholder="your@email.com" required="">
+		    							</div>
+		    							<div class="col-sm-12">
+		    								<div class="col-sm-12">
+		    									<button class="btn btn-info btn-lg"><strong>Submit</strong></button>
+		    								</div>
+		    							</div>
+		    						</div>
+	    						</form>
+	    					</div>
+    					</div>
+    					<!-- SUCCESS -->
+    					<div class="center-block col-sm-8 form-group success-block clearfix ng-hide" ng-show="formSuccess">
+    						<div class="success-box border-radius">
+    							<img src="images/f8a37741.Checked.png"> <strong class="text-info text">SUCCESS!!</strong>
+    						</div>
+    						<div class="col-sm-12">
+    							<p class="text-primary fw-light">A confirmation note has been sent to your email account and your costumer.</p>
+    						</div>
+    					</div>
+    				<!-- /success -->
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+
+    	<footer class="ng-scope">
+    		<div class="container">
+    			<div class="col-md-4 col-sm-3">
+    				<img src="images/91d87d5d.Footer.png" class="logo">
+    				<h4 class="fw-normal">peach</h4></div><div class="col-md-8 col-sm-9 menu-links"><a href="#" class="col-sm-2 col-xs-12">LEGAL</a> <a href="#" class="col-sm-2 col-xs-12">AGENTS</a> <a href="#" class="col-sm-2 col-xs-12">JOIN US</a> <a href="#" class="col-sm-2 col-xs-12">PRESS</a> <a href="#" class="col-sm-2 col-xs-12">CONTACT</a></div></div></footer>
+
+    </div>
+
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-54268250-1', 'auto');
+      ga('send', 'pageview');</script>
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <script src="scripts/be1ec570.vendor.js"></script><script src="scripts/219d8786.scripts.js"></script>
+
+  	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+ 	<script src="main.js"></script>
+
+    </body>
+
+
+</html>
