@@ -1,3 +1,7 @@
+.header{
+	height: 80px;
+}
+
 .peach{
 	height: 38px;
 	width: 38px;
@@ -8,22 +12,59 @@
 .headtitle{
 	display: inline-block;
 	margin-left: 25px;
+	/*color: #A8A8A8;*/
 }
 .headtitle,a{
-	color: lightgrey;
+	color: #A8A8A8;
 }
 
 .btn-sign-in{
 	background-color: white;
-	color:blue;
+	color: #0099FF;
+	height: 40px;
+	width: 90px;
 	border-radius: 1px;
-	border-color: blue;
+	margin-top: 20px;
+	margin-right: 36px;
 	border-radius: 5px;
-	margin-top: 12px;
-	margin-right: 50px;
+	border-color: #0099FF;
+}
+
+.btn-sign-in:hover{
+	background: none;
+	color:#0099FF;
+	/*border-radius: 5px;*/
+	border-color: blue;
+
 }
 
 .hero-cover-bg{
 	background: url('/images/bkgrd.png');
 	height:478px;
+}
+
+.center-block,h1{
+	padding-top: 75px;
+	padding-left: 20px;
+}
+
+.center-block,h3{
+	padding-left: 20px;
+
+}
+
+.start-btn{
+	margin-left: 20px;
+	margin-top: 20px;
+	height: 60px;
+	font-size: 16px;
+	padding: 17px;
+	width: 190px;
+	background-color: #3f87ff;
+	border-color: #2577ff;
+}
+
+.start-btn:hover{
+	background-color: #0c67ff;
+	border-color: #0057e7;
 }
