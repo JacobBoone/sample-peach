@@ -2,11 +2,31 @@ extends layout
 
 block content
 
-		.container
-			h1 Welcome to MaidaMilkin.com!
-			p We are happy you're here. The site is currently under construction.
+		body.ng-scope(ng-app='peachApp')
+			.content.animated.ng-scope(ng-view='')
+				.container.ng-scope
+					//Header 
+					.header.clearfix
+						.col-sm-6.col-xs-3
+							.logo
+								a(href='#')
+									img.peach(src='/images/94382040.Logo.png', alt='Peach')
+								h3.text-primary.hidden-xs.headtitle
+									a(href='#') peach
+						.col-sm-6.col-xs-9
+							button.btn.btn-info.btn-sign-in.pull-right(btn-animate='', data-toggle='modal', data-target='#modalLogin')
+								strong SIGN IN
+							ul.more.pull-right.hide
+								li.bg-primary.border-radius.pull-right
+								li.bg-primary.border-radius.pull-right
+								li.bg-primary.border-radius.pull-right
+					// Header 
+		.hero-cover-block.clearfix.ng-scope
+			.hero-cover-bg
+				.container
+					.col-sm-12.content-hero
+						.center-block.clearfix
+							h1 Protect what you love
+							h3 Warranty pricing and comparison on your terms
+							a.btn.btn-info.fw-medium(href='', btn-animate='', data-toggle='modal', data-target='#modalLogin') LET'S START
 
-			img(src="http://worldbreastfeedingweek.org/images/wbw2014-logo3.png" class="image-responsive" width=225 height=200)
-
-			
-			h3 Happy world breastfeeding week 2014!

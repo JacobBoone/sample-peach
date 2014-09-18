@@ -1,0 +1,29 @@
+.peach{
+	height: 38px;
+	width: 38px;
+	display: inline-block;
+	margin-left: 31px;
+}
+
+.headtitle{
+	display: inline-block;
+	margin-left: 25px;
+}
+.headtitle,a{
+	color: lightgrey;
+}
+
+.btn-sign-in{
+	background-color: white;
+	color:blue;
+	border-radius: 1px;
+	border-color: blue;
+	border-radius: 5px;
+	margin-top: 12px;
+	margin-right: 50px;
+}
+
+.hero-cover-bg{
+	background: url('/images/bkgrd.png');
+	height:478px;
+}
