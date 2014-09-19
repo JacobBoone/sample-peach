@@ -56,7 +56,7 @@ block content
 							| We go to work to do two things: share passionate ideas about technology and make the world a little better. Co-founders, Luke and Mauricio are proud of the struggles they’ve overcome in life to become entrepreneurs. We exist that the powerful revolution goes on and that we may contribute a verse.
 		
 
-		.peach-block.block.ng-scope
+		.peach-block.block.ng-scope.portrait-frame
 			.container
 				.center-block.col-sm-6.text-center.border-bottom
 					.col-sm-10.center-block
@@ -73,12 +73,12 @@ block content
 				.col-sm-12.text-center
 					p Supported by
 					ul.logos
-						li
+						li.sponsor
 							a(href='http://www.techstars.com', target='_blank')
-								img(src='images/ac38f1ff.Techstars.png', alt='Techstars')
-						li
+								img.techstar(src='images/ac38f1ff.Techstars.png', alt='Techstars')
+						li.sponsor
 							a(href='http://www.boomtownboulder.com', target='_blank')
-								img(src='images/6290e9ef.Boomtown.png', alt='Boomtown')
+								img.boom(src='images/6290e9ef.Boomtown.png', alt='Boomtown')
 	
 		footer.ng-scope
 			.container
@@ -91,6 +91,34 @@ block content
 					a.col-sm-2.col-xs-12(href='#') JOIN US
 					a.col-sm-2.col-xs-12(href='#') PRESS
 					a.col-sm-2.col-xs-12(href='#') CONTACT
+
+
+		#modalLogin.modal.fade.ng-scope(tabindex='-1', role='dialog')
+			.modal-dialog.animated.bounceOutDown(ng-class='{\'animated bounceInDown\':modalEffect, \'animated bounceOutDown\' : !modalEffect}')
+				.modal-content
+					.modal-body.border-radius.clearfix
+						
+						.modal-header
+							.logo
+								img(src='images/9b2a0793.Mini.png')
+
+						.modal-form-block(ng-hide='formSuccess')
+							.text-center
+								h3
+									strong Launching Soon
+								p.text-primary Notify me when it’s ready.
+							.center-block.col-sm-8.form-group
+								form.form-horizontal.form-subscribe.ng-pristine.ng-invalid.ng-invalid-required(role='form', ng-submit='formSubmit()')
+									.form-group.has-feedback
+										.col-sm-12
+											span.glyphicon.glyphicon-envelope.form-control-feedback
+											input.form-control.ng-pristine.ng-invalid.ng-invalid-required.ng-valid-email(type='email', name='email', ng-model='email', placeholder='your@email.com', required='')
+										.col-sm-12
+											.col-sm-12
+												button.btn.btn-info.btn-lg
+													strong Submit
+				
+					
 
 
 

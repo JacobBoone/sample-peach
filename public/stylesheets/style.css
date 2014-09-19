@@ -81,3 +81,36 @@
 	width: 160px;
 	height: 118px;
 }
+/*
+.twoguys{
+	width: 416px;
+
+}
+*/
+body > div.about-block.block.ng-scope > div > div > div > img{
+	width: 416px;
+}
+
+body > div.about-block.block.ng-scope{
+	background-color: lightgrey;
+}
+
+.center-block{
+	float: center;
+}
+
+.sponsor{
+	display: inline-block;
+}
+
+footer{
+	background-color: grey;
+}
+
+.techstar{
+	width: 99px;
+}
+
+.boom{
+	width: 147px;
+}
