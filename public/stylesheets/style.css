@@ -2,7 +2,7 @@
 	height: 80px;
 }
 
-.peach{
+.bigpeach{
 	height: 38px;
 	width: 38px;
 	display: inline-block;
@@ -11,12 +11,12 @@
 
 .headtitle{
 	display: inline-block;
-	margin-left: 25px;
-	/*color: #A8A8A8;*/
-}
-.headtitle,a{
+	margin-left: 3px;
 	color: #A8A8A8;
 }
+/*.headtitle,a{*/
+/*	color: #A8A8A8;
+}*/
 
 .btn-sign-in{
 	background-color: white;
@@ -92,7 +92,7 @@ body > div.about-block.block.ng-scope > div > div > div > img{
 }
 
 body > div.about-block.block.ng-scope{
-	background-color: lightgrey;
+	background-color: #F8F8F8;
 }
 
 .center-block{
@@ -104,13 +104,128 @@ body > div.about-block.block.ng-scope{
 }
 
 footer{
-	background-color: grey;
+	/*background-color: grey;*/
+	padding: 80px;
+	background-color: #b0bec5;
+	color: white;
 }
+
+
 
 .techstar{
 	width: 99px;
+	margin-top: 25px;
 }
 
 .boom{
 	width: 147px;
+	margin-left: 70px;
+	margin-top: 25px;
+}
+.block p {
+color: #546e7a;
+line-height: 30px;
+word-spacing: 5px;
+font-size: 16px;
+font-weight: 300;
+}
+
+.sum-text{
+	color: #546e7a;
+	line-height: 30px;
+	word-spacing: 5px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+
+.how-we-doit-block {
+margin-bottom: 35px;
+margin-top: 25px;
+}
+
+
+.about-block {
+background-color: #fafafa;
+border-top: 1px solid #e3e8ea;
+border-bottom: 1px solid #e3e8ea;
+padding: 60px 0;
+}
+
+
+.peach-block {
+margin: 60px 0;
+}
+
+.bottom-peach{
+	width: 96px;
+}
+
+.text-info {
+color: #3f87ff;
+}
+
+h3{
+	font-size: 24px;
+}
+
+.peach-block h2 {
+font-size: 48px;
+margin-bottom: 32px;
+color: #90a4ae;
+}
+
+.peach-block .border-bottom {
+border-bottom: 1px solid #eceff1;
+}
+
+
+.press-block {
+margin-bottom: 110px;
+}
+
+.menu-links,a{
+	color: white;
+}
+
+.footlogo{
+	width: 20px;
+}
+
+footer,img, footer,h4{
+	display: inline-block;
+}
+.fw-normal{
+	margin-left: 10px; 
+}
+.minipeach{
+	width: 24px;
+	margin-left: 50%;
+}
+
+.modal .modal-body {
+padding: 0;
+background-color: #fafafa;
+}
+
+.modal-content {
+position: relative;
+width: 500px;
+border-radius: 3px;
+}
+
+.m-button{
+	width: 273px;
+	height:50px;
+	margin-top: 25px;
+	background-color: #3f87ff;
+	border-color: #2577ff;
+}
+
+#modalLogin > div > div > div > div.modal-form-block > div.center-block.col-sm-8.form-group > form > div > div:nth-child(1) > span{
+	color: blue;
+	/*width: 26px;*/
+	/*height: 15px;*/
+	/*float: left;*/
+	vertical-align: left;
 }

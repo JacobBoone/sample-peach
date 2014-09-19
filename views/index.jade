@@ -10,9 +10,9 @@ block content
 						.col-sm-6.col-xs-3
 							.logo
 								a(href='#')
-									img.peach(src='/images/94382040.Logo.png', alt='Peach')
+									img.bigpeach(src='/images/94382040.Logo.png', alt='Peach')
 								h3.text-primary.hidden-xs.headtitle
-									a(href='#') peach
+									a.headtitle(href='#') peach
 						.col-sm-6.col-xs-9
 							button.btn.btn-info.btn-sign-in.pull-right(btn-animate='', data-toggle='modal', data-target='#modalLogin')
 								strong SIGN IN
@@ -37,12 +37,12 @@ block content
 						.step-1.steps.col-sm-5
 							.image.center-block
 								img.map-pic(src='images/fe6b9111.Server.png')
-							p.text-justify
+							p.text-justify.sum-text
 								| We've built the most advanced warranty analytics platform comparing and summarizing hundreds of policies in seconds.
 						.step-2.steps.col-sm-5.col-md-offset-1.col-sm-offset-1
 							.image.center-block
 								img.doc-pic(src='images/8ac91206.Options.png')
-							p.text-justify
+							p.text-justify.sum-text
 								| We put them in “Plain English” so you can make "Peaches to Peaches" comparisons when buying Warranties.
 		
 
@@ -52,7 +52,7 @@ block content
 					.image
 						img(src='images/4afaf004.Founders.png')
 						h3.text-info.fw-light About The Team
-						p.text-primary.text-justify
+						p.text-primary.text-justify.sum-text
 							| We go to work to do two things: share passionate ideas about technology and make the world a little better. Co-founders, Luke and Mauricio are proud of the struggles they’ve overcome in life to become entrepreneurs. We exist that the powerful revolution goes on and that we may contribute a verse.
 		
 
@@ -61,9 +61,9 @@ block content
 				.center-block.col-sm-6.text-center.border-bottom
 					.col-sm-10.center-block
 					.logo
-						img(src='images/94382040.Logo.png')
+						img.bottom-peach(src='images/94382040.Logo.png')
 					h2.fw-normal.text-primary peach
-					p.text-justify
+					p.text-justify.sum-text
 						| Peach is a startup disrupting the insurance market. Designed to give you transparency around your warranties choices so you can exactly get what you need at the right price.
 
 
@@ -83,7 +83,7 @@ block content
 		footer.ng-scope
 			.container
 				.col-md-4.col-sm-3
-					img.logo(src='images/91d87d5d.Footer.png')
+					img.logo.footlogo(src='images/91d87d5d.Footer.png')
 					h4.fw-normal peach
 				.col-md-8.col-sm-9.menu-links
 					a.col-sm-2.col-xs-12(href='#') LEGAL
@@ -100,7 +100,7 @@ block content
 						
 						.modal-header
 							.logo
-								img(src='images/9b2a0793.Mini.png')
+								img.minipeach(src='images/9b2a0793.Mini.png')
 
 						.modal-form-block(ng-hide='formSuccess')
 							.text-center
@@ -108,14 +108,14 @@ block content
 									strong Launching Soon
 								p.text-primary Notify me when it’s ready.
 							.center-block.col-sm-8.form-group
-								form.form-horizontal.form-subscribe.ng-pristine.ng-invalid.ng-invalid-required(role='form', ng-submit='formSubmit()')
+								form.form-horizontal.form-subscribe.ng-pristine.ng-invalid.ng-invalid-required(action="/emailSubmission", method="post")
 									.form-group.has-feedback
 										.col-sm-12
-											span.glyphicon.glyphicon-envelope.form-control-feedback
+											span.glyphicon.glyphicon-envelope.form-control-feedback.envel
 											input.form-control.ng-pristine.ng-invalid.ng-invalid-required.ng-valid-email(type='email', name='email', ng-model='email', placeholder='your@email.com', required='')
 										.col-sm-12
 											.col-sm-12
-												button.btn.btn-info.btn-lg
+												button.btn.btn-info.btn-lg.m-button
 													strong Submit
 				
 					
