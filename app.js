@@ -4,7 +4,7 @@ var indexController = require('./controllers/index.js');
 
 
 var mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/peachemail')
+mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://localhost/peachemail')
 
 var app = express();
 app.set('view engine', 'jade');
