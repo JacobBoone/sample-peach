@@ -16,6 +16,7 @@ app.get('/', indexController.index);//points to what I want user to see.
 
 app.post('/emailSubmission', indexController.submission);
 
+
 var server = app.listen(process.env.PORT || 5248, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
