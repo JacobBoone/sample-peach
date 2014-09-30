@@ -18,7 +18,7 @@ var indexController = {
 					console.log("ERROR!", err)
 				}
 				else{
-					res.redirect('#')
+					res.redirect('/')
 				}
 			})
 		},

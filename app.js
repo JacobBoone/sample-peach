@@ -12,7 +12,7 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({extended: false}));
 // app.use(express.static(path.join(config.root, '/')));
-app.get('#', indexController.index);//points to what I want user to see.
+app.get('/', indexController.index);//points to what I want user to see.
 
 app.post('/emailSubmission', indexController.submission);
 
